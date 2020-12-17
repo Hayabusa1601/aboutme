@@ -1158,7 +1158,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../../images/haikei.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1271,17 +1271,6 @@ input, select, textarea {
 			margin-top: 3.5rem;
 		}
 
-			#header > *:before {
-				content: '';
-				display: block;
-				position: absolute;
-				top: calc(-3.5rem - 1px);
-				left: calc(50% - 1px);
-				width: 1px;
-				height: calc(3.5rem + 1px);
-				background: #ffffff;
-			}
-
 		#header > :first-child {
 			margin-top: 0;
 		}
@@ -1290,10 +1279,14 @@ input, select, textarea {
 				display: none;
 			}
 
-			#header .logo img{
-			border-radius: 50%;
-
+			#header .logo {
+				width: 5.5rem;
+				height: auto;
 			}
+	
+				#header .logo img:before {
+					font-size: 2rem;
+				}
 
 		#header .content {
 			border-style: solid;
@@ -1439,9 +1432,10 @@ input, select, textarea {
 				line-height: 4.75rem;
 			}
 
-				#header .logo .icon:before {
+				#header .logo icon:before {
 					font-size: 1.75rem;
 				}
+
 
 			#header .content .inner {
 				padding: 2.5rem 1rem;
